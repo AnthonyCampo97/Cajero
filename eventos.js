@@ -19,12 +19,12 @@ document.addEventListener("mouseup", soltarMouse); //Cuando se Suelta el mouse
 document.addEventListener("mousemove", dibujarMouse); //Cuando se mueve el mouse
 
 
-dibujarLinea("red", 149, 149, 151, 151, papel); //Punto de partida
+dibujarLinea("green", 149, 149, 151, 151, papel); //Punto de partida
 //Linea del Borde
-dibujarLinea("red", 0, 0, 300, 0, papel);
-dibujarLinea("red", 300, 0, 300, 300, papel);
-dibujarLinea("red", 300, 300, 0, 300, papel);
-dibujarLinea("red", 0, 300, 0, 0, papel);
+dibujarLinea("blue", 0, 0, 300, 0, papel);
+dibujarLinea("blue", 300, 0, 300, 300, papel);
+dibujarLinea("blue", 300, 300, 0, 300, papel);
+dibujarLinea("blue", 0, 300, 0, 0, papel);
 //Fin borde
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo) {
@@ -39,8 +39,8 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo) {
 
 //Funciones Para Dibujar con teclado
 function dibujarTeclado(evento) {
-    //console.log(evento.keyCode);
-    var colorcito = "blue";
+    console.log(evento.keyCode);
+    var colorcito = "red";
     var movimiento = 10;
     switch (evento.keyCode) {
         case teclas.DOWN:
