@@ -5,11 +5,11 @@ var teclas = {
     RIGHT: 39
 };
 var estado = 0; //estado del Click
-var colorLinea = "black"; //Color de la linea
+var colorLinea = "green"; //Color de la linea
 var cuadro = document.getElementById("area_de_dibujo");
 var papel = cuadro.getContext("2d");
-var x = 150,
-    y = 150;
+var x = 299,
+    y = 299;
 
 
 //console.log(teclas);
@@ -19,7 +19,7 @@ document.addEventListener("mouseup", soltarMouse); //Cuando se Suelta el mouse
 document.addEventListener("mousemove", dibujarMouse); //Cuando se mueve el mouse
 
 
-dibujarLinea("green", 299, 299, 301, 301, papel); //Punto de partida
+dibujarLinea("green", 599, 599, 601, 601, papel); //Punto de partida
 //Linea del Borde
 dibujarLinea("blue", 0, 0, 600, 0, papel);
 dibujarLinea("blue", 600, 0, 600, 600, papel);

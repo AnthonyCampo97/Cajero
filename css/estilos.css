@@ -4,3 +4,7 @@ body
        font-family: 'Times New Roman', Times, serif;
     background-image: url("https://marketplace.canva.com/EAEthkBVLfQ/1/0/1600w/canva-blush-wave-desktop-wallpaper-drvq3zaYl2E.jpg");
 }
+h1{
+    background-color: blue ;
+    color: white ;
+}
