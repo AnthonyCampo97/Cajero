@@ -5,7 +5,7 @@ var teclas = {
     RIGHT: 39
 };
 var estado = 0; //estado del Click
-var colorLinea = "green"; //Color de la linea
+var colorLinea = "white"; //Color de la linea
 var cuadro = document.getElementById("area_de_dibujo");
 var papel = cuadro.getContext("2d");
 var x = 299,
@@ -21,10 +21,10 @@ document.addEventListener("mousemove", dibujarMouse); //Cuando se mueve el mouse
 
 dibujarLinea("green", 599, 599, 601, 601, papel); //Punto de partida
 //Linea del Borde
-dibujarLinea("blue", 0, 0, 600, 0, papel);
-dibujarLinea("blue", 600, 0, 600, 600, papel);
-dibujarLinea("blue", 600, 600, 0, 600, papel);
-dibujarLinea("blue", 0, 600, 0, 0, papel);
+dibujarLinea("pink", 0, 0, 600, 0, papel);
+dibujarLinea("pink", 600, 0, 600, 600, papel);
+dibujarLinea("pink", 600, 600, 0, 600, papel);
+dibujarLinea("pink", 0, 600, 0, 0, papel);
 //Fin borde
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo) {
@@ -40,7 +40,7 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo) {
 //Funciones Para Dibujar con teclado
 function dibujarTeclado(evento) {
     console.log(evento.keyCode);
-    var colorcito = "red";
+    var colorcito = "white";
     var movimiento = 10;
     switch (evento.keyCode) {
         case teclas.DOWN:
