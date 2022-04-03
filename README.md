@@ -1,2 +1,2 @@
-# Capturador de teclado
-Ejercicio de prueba cajero automatico
+# Capturador de Keyborad & Mouse
+Ejercicio de capturar movimientos de mouse en pantalla y captura movimiento de Flechas
