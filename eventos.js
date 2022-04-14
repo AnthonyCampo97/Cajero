@@ -40,7 +40,7 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo) {
 //Funciones Para Dibujar con teclado
 function dibujarTeclado(evento) {
     console.log(evento.keyCode);
-    var colorcito = "white";
+    var colorcito = "black";
     var movimiento = 10;
     switch (evento.keyCode) {
         case teclas.DOWN:
